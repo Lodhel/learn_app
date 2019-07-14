@@ -8,7 +8,7 @@ import Content from "./components/Content";
 function App() {
     return (
         <div className="app-wrapper">
-            <Header />
+            <Header name="John" />
             <Nav />
             <Content />
         </div>
