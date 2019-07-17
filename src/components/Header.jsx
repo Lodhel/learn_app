@@ -1,11 +1,11 @@
 import React from 'react';
 
 
-const Header = (props) => {
+const Header = () => {
     return (
         <header className="header">
             <img src="http://saadbess.github.io/george-bokhua/img/fire.jpg" />
-            <h1> Hello {props.name}</h1>
+            <h1> Hello</h1>
         </header>
         )
 }
