@@ -5,20 +5,18 @@ import Header from "./components/Header";
 import Nav from "./components/Nav";
 import Content from "./components/Content";
 import Dialogs from "./components/Dialogs";
-import { BrowserRouter, Router } from "react-router-dom";
+import { Route } from "react-router-dom";
 
 function App() {
     return (
-        <BrowserRouter>
         <div className="app-wrapper">
             <Header />
             <Nav />
             <div>
-                <Router component={Content} />
-                <Router component={Dialogs} />
+                <Route path='/dialogs/' component={Dialogs} />
+                <Route path='/content/' component={Content} />
             </div>
             </div>
-        </BrowserRouter>
   );
 }
 
