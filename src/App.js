@@ -13,8 +13,8 @@ function App() {
             <Header />
             <Nav />
             <div>
-                <Route exact path='/dialogs/' component={Dialogs} />
-                <Route path='/content/' component={Content} />
+                <Route exact path='/dialogs/' render={() => <Dialogs />} />
+                <Route path='/content/' component={() => <Content />} />
             </div>
             </div>
   );
