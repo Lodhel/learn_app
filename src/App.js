@@ -7,13 +7,13 @@ import Content from "./components/Content";
 import Dialogs from "./components/Dialogs";
 import { Route } from "react-router-dom";
 
-function App() {
+function App(props) {
     return (
         <div className="app-wrapper">
             <Header />
             <Nav />
             <div>
-                <Route exact path='/dialogs/' render={() => <Dialogs />} />
+                <Route exact path='/dialogs/' render={() => <Dialogs dialogs={props.state["dialogs"]} />} />
                 <Route path='/content/' component={() => <Content />} />
             </div>
             </div>

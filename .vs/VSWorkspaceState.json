@@ -3,7 +3,8 @@
     "",
     "\\public",
     "\\src",
-    "\\src\\components"
+    "\\src\\components",
+    "\\src\\redux"
   ],
   "SelectedNode": "\\src\\components\\Dialogs.jsx",
   "PreviewInSolutionExplorer": false
