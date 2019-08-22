@@ -14,8 +14,8 @@ let state = {
     ]
 }
 
-export let addPost (MessagePost) => {
-    let newPost = { id = 2, post = MessagePost }
+export let addPost = (MessagePost) => {
+    let newPost = { id: 2, post: MessagePost }
     state.posts.push(newPost)
 }
 

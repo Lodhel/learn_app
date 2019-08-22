@@ -4,12 +4,16 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
+import { addPost } from './redux/state';
 import state from './redux/state';
+
+
+addPost('Kangaroo');
 
 
 ReactDOM.render((
     <BrowserRouter>
-        <App state={state} />
+        <App state={state} addPost={addPost} />
     </BrowserRouter>
 
 ), document.getElementById('root'))

@@ -3,7 +3,7 @@ import s from './Content.module.css';
 import { addPost } from '../redux/state';
 
 
-const Content = () => {
+const Content = (props) => {
 
     let event = () => { alert('event') }
 
@@ -11,7 +11,9 @@ const Content = () => {
         <div className="content">
             <button onClick={event} ></button>
             <br />
-            <div className={s.item}><addPost MessagePost="Here we go" /></div>
+            <div className={s.item}>
+
+            </div>
         </div>
     )
 }

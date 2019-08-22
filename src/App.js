@@ -14,8 +14,8 @@ function App(props) {
             <Header />
             <Nav />
             <div>
-                <Route exact path='/dialogs/' render={() => <Dialogs dialogs={props.state["dialogs"]} />} />
-                <Route path='/content/' component={() => <Content />} />
+                <Route exact path='/dialogs/' render={() => <Dialogs dialogs={props.state.dialogs} />} />
+                <Route path='/content/' component={() => <Content posts={props.state.posts} addPost={addPost} />} />
             </div>
             </div>
   );
